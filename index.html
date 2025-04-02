@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Long</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/hacker-and-threat/64/hacker_anonymous_mask_incognito-512.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <svg class="loading-icon" viewBox="0 0 100 100" width="100" height="100">
+            <!-- Circle for the face -->
+            <circle class="face-path" cx="50" cy="50" r="40" fill="none" stroke="var(--primary-color)" stroke-width="4"/>
+            <!-- Eyes -->
+            <circle class="eye-path" cx="35" cy="40" r="5" fill="var(--primary-color)"/>
+            <circle class="eye-path" cx="65" cy="40" r="5" fill="var(--primary-color)"/>
+            <!-- Smile -->
+            <path class="smile-path" d="M30 60 Q50 75 70 60" fill="none" stroke="var(--primary-color)" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div class="loading-text">Initializing system...</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <i class="fas fa-user-secret"></i> Long <span class="cursor">|</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-btn active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#skills" class="nav-btn">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#projects" class="nav-btn">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#contact" class="nav-btn">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="sections-container">
+        <section id="home" class="section active">
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">root@system - Long</span>
+                </div>
+                
+                <div class="terminal-content">
+                    <div class="command">$ whoami</div>
+                    <div class="output">
+                        <div class="profile-info">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user-secret"></i>
+                            </div>
+                            <div class="profile-text">
+                                <h2>Long</h2>
+                                <p>Professional Software Developer | Malware Analysis | Security Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="command">$ cat about.txt</div>
+                    <div class="output">
+                        <div class="about-content">
+                            <p>Hello, I'm a software developer specializing in web development and cybersecurity. I develop malware analysis tools and security testing utilities. Currently exploring the field of bug hunting to enhance my security research skills.</p>
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-bug"></i>
+                                    <span>Security Tools Developer</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Bug Hunter</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-code"></i>
+                                    <span>Malware Analyst</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">root@system - SKILLS</span>
+                </div>
+                <div class="terminal-content">
+                    <div class="command">$ ls skills/</div>
+                    <div class="output">
+                        <div class="skills-categories">
+                            <div class="skills-category">
+                                <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                                <div class="skills-grid">
+                                    <div class="skill" data-level="95">
+                                        <div class="skill-name">HTML5</div>
+                                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                                        <div class="skill-level">95%</div>
+                                    </div>
+                                    <div class="skill" data-level="90">
+                                        <div class="skill-name">CSS3</div>
+                                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                                        <div class="skill-level">90%</div>
+                                    </div>
+                                    <div class="skill" data-level="90">
+                                        <div class="skill-name">JavaScript</div>
+                                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                                        <div class="skill-level">90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skills-category">
+                                <h3><i class="fas fa-server"></i> Backend Development</h3>
+                                <div class="skills-grid">
+                                    <div class="skill" data-level="85">
+                                        <div class="skill-name">Python</div>
+                                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                                        <div class="skill-level">85%</div>
+                                    </div>
+                                    <div class="skill" data-level="75">
+                                        <div class="skill-name">Node.js</div>
+                                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                                        <div class="skill-level">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-category">
+                                <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                                <div class="skills-grid">
+                                    <div class="skill" data-level="80">
+                                        <div class="skill-name">React</div>
+                                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                                        <div class="skill-level">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-category">
+                                <h3><i class="fas fa-shield-alt"></i> Security Skills</h3>
+                                <div class="skills-grid">
+                                    <div class="skill" data-level="85">
+                                        <div class="skill-name">Malware Development</div>
+                                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                                        <div class="skill-level">85%</div>
+                                    </div>
+                                    <div class="skill" data-level="60">
+                                        <div class="skill-name">Bug Hunting</div>
+                                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                                        <div class="skill-level">60%</div>
+                                    </div>
+                                    <div class="skill" data-level="75">
+                                        <div class="skill-name">Security Tools</div>
+                                        <div class="skill-bar"><div class="skill-progress"></div></div>
+                                        <div class="skill-level">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">root@system - PROJECTS</span>
+                </div>
+                <div class="terminal-content">
+                    <div class="command">$ ls projects/</div>
+                    <div class="output">
+                        <div class="projects-grid">
+                            <div class="project">
+                                <div class="project-icon">
+                                    <i class="fas fa-user-secret"></i>
+                                </div>
+                                <h3>GetTheHideOutV1</h3>
+                                <p>Advanced Malware Analysis Platform for analyzing process behavior, registry changes, network connections, and suspicious strings</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Security</span>
+                                    <span class="tag">Malware Analysis</span>
+                                </div>
+                                <a href="https://longishung.github.io/GetTheHideOutv1/" class="project-link" target="_blank">
+                                    Visit Project <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">root@system - CONTACT</span>
+                </div>
+                <div class="terminal-content">
+                    <div class="command">$ ls social/</div>
+                    <div class="output">
+                        <div class="contact-info">
+                            <div class="contact-text">
+                                <h3><i class="fas fa-paper-plane"></i> Contact Me</h3>
+                                <p>You can reach me through the following social media platforms</p>
+                            </div>
+                            <div class="social-links">
+                                <a href="http://discordapp.com/users/1059341003460464741" class="social-btn" target="_blank">
+                                    <i class="fab fa-discord"></i>
+                                    <span>Discord</span>
+                                </a>
+                                <a href="https://www.instagram.com/9nonyi?igsh=MXZ5bGp6ZmYycml2OQ%3D%3D&utm_source=qr" class="social-btn" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="animated-background"></div>
+    <script src="script.js"></script>
+</body>
+</html> 
